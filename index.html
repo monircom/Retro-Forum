@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReTro Forum</title>
+    <!-- tailwind and daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'red-color': '#FF4240',
+                        'black-color': '#030712'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-mulish {
+            font-family: "Mulish", sans-serif;
+        }
+       
+    </style>
+</head>
+<body class="font-mulish">
+    <header class="max-w-[1440px] mx-auto px-4">
+        <nav class="max-w-[1170px] mx-auto mt-12 mb-8">
+            <div class="navbar p-0 bg-base-100">
+                <!-- small device -->
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-2xl lg:text-4xl font-extrabold text-black-color">ReTro</a>
+                </div>
+                <!-- large device -->
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal lg:text-lg px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end min-h-14">
+                    <a class="btn bg-[#797DFC] text-white lg:text-xl px-10 rounded-full">Sign In
+                        </a>
+                </div>
+            </div>
+        </nav>
+        <!-- banner section -->
+        <div class="max-w-[1170px] mx-auto mb-20">
+            
+            <div class="bg-[url('./images/bgbanner.png')] bg-[#12132D]
+            bg-cover bg-no-repeat rounded-[32px] flex flex-col items-center lg:h-[550px]">
+                <h1 class="text-white text-4xl/[86px] lg:text-[64px] text-center font-extrabold mt-[35px] lg:mt-[70px]">
+                    Welcome to the ReTro Forum
+                </h1>
+                <p class="text-white lg:text-lg lg:w-[691px] text-center my-2 lg:my-4">Share your favorite opinion and win and wp forum coffee mug!</p>
+                    <a href="#p-transport">
+                <button
+                    class="btn mt-2 mb-[130px] lg:mt-4 bg-[#1DD100] border-none text-black-color text-xl font-bold">Buy
+                    Tickets</button>
+                </a>
+                  
+            </div> 
+        </div>
+    </header>
+    <h1>Hello Assignment testing push command</h1>
+</body>
+</html>
