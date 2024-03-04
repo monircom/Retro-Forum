@@ -4,18 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReTro Forum</title>
+    <title>VinTage Forum</title>
     <!-- tailwind and daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 
-
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
     <!-- tailwind custom color -->
     <script>
         tailwind.config = {
@@ -33,9 +31,9 @@
         .font-mulish {
             font-family: "Mulish", sans-serif;
         }
-       
     </style>
 </head>
+
 <body class="font-mulish">
     <header class="max-w-[1440px] mx-auto px-4">
         <nav class="max-w-[1170px] mx-auto mt-12 mb-8">
@@ -43,7 +41,7 @@
                 <!-- small device -->
                 <div class="navbar-start">
                     <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <div tabindex="0" role="button" class="btn btn-ghost md:hidden lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -52,47 +50,245 @@
                         </div>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Home</a></li>
-                            <li><a>About</a></li>
-                            <li><a>Destination</a></li>
-                            <li><a>Search</a></li>
+                            <li>
+                                <div class="btn bg-gray-200 rounded-full p-3 tooltip  flex justify-center items-center  mr-3 mb-2"
+                                    data-tip="Home">
+                                    <img src="./images/home.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="btn bg-gray-200 rounded-full p-3 tooltip flex justify-center items-center  mr-3 mb-2"
+                                    data-tip="Edit">
+                                    <img src="./images/pencil.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="btn bg-gray-200 rounded-full p-3 tooltip flex justify-center items-center mr-3 mb-2"
+                                    data-tip="Add">
+                                    <img src="./images/personplus.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="btn bg-gray-200 rounded-full p-3 tooltip flex justify-center items-center mr-3"
+                                    data-tip="Bookmark">
+                                    <img src="./images/flag.png" alt="">
+                                </div>
+                            </li>
                         </ul>
                     </div>
-                    <a class="text-2xl lg:text-4xl font-extrabold text-black-color">ReTro</a>
+                    <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold text-black-color mr-5">VinTage</a>
                 </div>
                 <!-- large device -->
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal lg:text-lg px-1">
-                        <li><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Destination</a></li>
-                        <li><a>Search</a></li>
-                    </ul>
-                </div>
                 <div class="navbar-end min-h-14">
-                    <a class="btn bg-[#797DFC] text-white lg:text-xl px-10 rounded-full">Sign In
-                        </a>
+                    <div class="hidden md:flex lg:flex">
+                        <div class="btn bg-gray-200 rounded-full p-3 tooltip flex justify-center items-center  mr-3"
+                            data-tip="Home">
+                            <img src="./images/home.png" alt="">
+                        </div>
+                        <div class="btn bg-gray-200 rounded-full p-3 tooltip flex justify-center items-center  mr-3"
+                            data-tip="Edit">
+                            <img src="./images/pencil.png" alt="">
+                        </div>
+                        <div class="btn bg-gray-200 rounded-full p-3 tooltip flex justify-center items-center mr-3"
+                            data-tip="Add">
+                            <img src="./images/personplus.png" alt="">
+                        </div>
+                        <div class="btn bg-gray-200 rounded-full p-3 tooltip flex justify-center items-center mr-6"
+                            data-tip="Bookmark">
+                            <img src="./images/flag.png" alt="">
+                        </div>
+                    </div>
+                    <a class="btn bg-[#797DFC] text-white lg:text-xl px-10 rounded-full ml-6">Sign In
+                    </a>
                 </div>
             </div>
         </nav>
         <!-- banner section -->
         <div class="max-w-[1170px] mx-auto mb-20">
-            
+
             <div class="bg-[url('./images/bgbanner.png')] bg-[#12132D]
-            bg-cover bg-no-repeat rounded-[32px] flex flex-col items-center lg:h-[550px]">
-                <h1 class="text-white text-4xl/[86px] lg:text-[64px] text-center font-extrabold mt-[35px] lg:mt-[70px]">
-                    Welcome to the ReTro Forum
-                </h1>
-                <p class="text-white lg:text-lg lg:w-[691px] text-center my-2 lg:my-4">Share your favorite opinion and win and wp forum coffee mug!</p>
-                    <a href="#p-transport">
-                <button
-                    class="btn mt-2 mb-[130px] lg:mt-4 bg-[#1DD100] border-none text-black-color text-xl font-bold">Buy
-                    Tickets</button>
-                </a>
-                  
-            </div> 
+            bg-cover bg-no-repeat rounded-[32px] lg:h-[550px]">
+                <div class="flex flex-col lg:flex-row justify-between items-center lg:h-[550px]">
+                    <!-- Banner Left -->
+
+                    <div class="flex flex-col justify-start items-center lg:items-start lg:w-1/2 lg:ml-[100px]">
+                        <h1
+                            class="text-white text-4xl/[86px] lg:text-[64px] text-center font-extrabold mt-[35px] lg:mt-[70px] mb-6">
+                            Welcome to the <br>
+                            <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#797DFC] to-blue-900">
+                                VinTage
+                            </span>Forum
+                        </h1>
+                        <p class="text-white lg:text-lg max-w-[455px] mb-8 mx-3">Journey Through Time, Share Your Rhyme:
+                            Welcome to the VinTage Forum Where Nostalgia Blooms and Stories Gloom!</p>
+
+                        <label class="input input-bordered rounded-full flex flex-start  mb-[100px] text-left">
+                            <input id="search-field" type="text" class="grow" placeholder="Search" />
+                            <button onclick="handleSearch()"
+                                class="btn bg-[#797DFC] text-white lg:text-xl px-5 rounded-full -mr-3">Search
+                            </button>
+
+                        </label>
+
+
+                    </div>
+                    <!-- Banner Right -->
+                    <div class="w-[370px] bg-white lg:mr-[100px] rounded-[32px] max-h-[288px] p-12 mb-10">
+                        <div class="flex justify-between mb-6">
+                            <p>Registered Users</p>
+                            <p>01</p>
+                        </div>
+                        <div class="flex justify-between mb-6">
+                            <p>Forum</p>
+                            <p>05</p>
+                        </div>
+                        <div class="flex justify-between mb-6">
+                            <p>Topics</p>
+                            <p>01</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Replies</p>
+                            <p>01</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </header>
-    <h1>Hello Assignment testing push command</h1>
+
+    <main>
+        <!-- Let’s Discuss Section -->
+
+        <!-- loading spinner -->
+        <div id="loading-spinner" class="text-center my-40 hidden">
+            <span class="loading loading-spinner loading-lg"></span>
+        </div>
+
+        <section>
+            <div class="container max-w-[1170px] lg:my-20 px-4 my-8 mx-auto">
+                <div class="flex flex-col justify-center text-center items-center">
+                    <h1 class="mt-8 text-2xl lg:text-4xl font-extrabold">Let’s Discuss</h1>
+                    <p class="my-8 text-[#13131899] font-medium max-w-[610px]">Let's Discuss: A Hub for Engaging
+                        Conversations, Where Diverse Perspectives Unite, Ideas Flourish, and Collaborative Wisdom Sparks
+                        Endless Possibilities for a Better Tomorrow!</p>
+                </div>                
+
+                <!-- post container -->                
+                <div class="flex flex-col lg:flex-row justify-center">
+                    <!-- post -->
+
+                    <div id="post-container">
+
+
+                    </div>
+                    <!-- post right side -->
+                    <div class="p-5 bg-gray-50 lg:w-[35%] rounded-xl">
+                        <div class="flex justify-between mb-3">
+                            <div>
+                                <p>Title</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="./images/ok.png" alt="">
+                                <p>Mark as read (<span id="read-counter">0</span>)</p>
+                            </div>
+                        </div>
+                        <!-- first -->
+                        <div id="post-read">                           
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="post-container"></div>
+
+            </div>
+        </section>
+
+
+        <!-- Join Our Forum Section -->
+
+        <section>
+            <div class="container max-w-[1170px] lg:my-20 px-4 my-8 mx-auto">
+
+                <div
+                    class="bg-[#12132D] rounded-2xl p-[1.5rem] lg:p-10 min-h-[400px] lg:h-[21.125rem] flex flex-col lg:flex-row items-center justify-start space-y-5 lg:space-y-6 bg-cover bg-center">
+                    <div>
+                        <div class="space-y-4 mb-5">
+                            <h2 class="text-xl lg:text-3xl font-extrabold text-white">
+                                Join Our Forum
+                            </h2>
+                            <p class="text-[14px] lg:text-base text-white font-medium">
+                                Join Our Forum: Where Voices Unite, Ideas
+                                Take Flight - Your Space, Your Voice, Our Community's Delight!
+                            </p>
+
+                            <button class="btn bg-[#797DFC] text-white lg:text-xl rounded-full border-none">
+                                Registered Now
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/joinforum.png" alt="">
+                       
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!-- Latest post -->
+        <section>
+            <div class="container max-w-[1170px] lg:my-20 px-4 my-8 mx-auto">
+                <div class="flex flex-col justify-center text-center items-center">
+                    <h1 class="mt-8 text-2xl lg:text-4xl font-extrabold">Latest Posts</h1>
+                    <p class="my-8 text-[#13131899] font-medium max-w-[610px]">Embark on a Journey of Knowledge and
+                        Delight - Where Every Scroll Unveils the Latest Posts' Insight! Stay Informed, Stay Inspired -
+                        Embrace the Spectrum of Ideas, Where the Latest Unfolds and Wisdom Resides.</p>
+                </div>
+                <!-- Latest posts -->
+                
+                <div id="latest-post" class="flex flex-col lg:flex-row gap-6">
+                   
+
+                </div>
+
+
+
+            </div>
+        </section>
+
+    </main>
+
+     <!-- Footer Section -->
+     <footer class="footer max-w-[1440px] mx-auto py-[120px] bg-gray-100">
+        <div class=" w-[82%] mx-auto">
+            <div class="flex flex-col items-center justify-center w-full pb-12 border-solid border-b-2">
+                
+                    <h2 class="font-extrabold  text-4xl  mb-4">VinTage</h2>
+                    <p class="max-w-[600px] text-center">Where Classic Conversations Meet Timeless Threads – Join the Elegance, Engage in the Charm at Vintage Forum.</p>
+
+                    <img src="./images/Social.png" alt="" class="mt-8 hover:cursor-pointer">
+                    
+                
+                
+            </div>
+
+            <div class="flex justify-center w-full mt-8">
+                <div>
+                   <p> 2017, All Rights Reserved.</p>
+                </div>                
+                
+            </div>
+        </div>
+    </footer>
+        
+    <!-- FrontEnd JS -->
+    <script src="./app.js"></script>
+
 </body>
+
 </html>
