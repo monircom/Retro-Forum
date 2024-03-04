@@ -109,17 +109,6 @@ const loadLatestPost = async (searchText) => {
   const displayLatestPosts = (posts) => {
     // step-1 declare the parent div to append to in a variable
     const postLatestContainer = document.getElementById("latest-post");
-  
-    //   clear post container cards before adding new cards
-    //postLatestContainer.textContent = " ";
-  
-   //console.log(posts);
-  
-    //  for (const post of posts ){
-    //      alert (post)
-
-    //  }
-    
     
 
     posts.forEach((post) => {
@@ -140,8 +129,8 @@ const loadLatestPost = async (searchText) => {
               <img src="./images/date.png" alt="">
               <p>${post?.author?.posted_date ? post.author.posted_date:"No publish date"}</p>
           </div>                            
-          <p class="text-xl font-bold text-left">If a dog chews shoes whose shoes does he choose?</p>
-          <p class="text-left">Yes, you can run unit tests and view the results directly within the app. </p>
+          <p class="text-xl font-bold text-left">${post.title}</p>
+          <p class="text-left">${post.description}</p>
           
           <div class="flex gap-3 items-start">                            
           <div class="avatar">
