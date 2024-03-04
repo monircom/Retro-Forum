@@ -37,7 +37,7 @@ const loadPost = async (searchText) => {
     postCard.innerHTML = ` <div class="flex bg-[#F3F3F5] p-6 shadow-lg rounded-lg mb-6">
     <div class="mr-6">
         <div class="indicator">
-            <span class="indicator-item border-none badge badge-secondary bg-green-500"></span>
+            <span class="indicator-item border-none badge badge-secondary ${post?.isActive? 'bg-green-500':'bg-red-500'} bg-green-500"></span>
             <div class="avatar">
                 <div class="w-[100px] rounded-xl">
                     <img src="${post.image}" />
